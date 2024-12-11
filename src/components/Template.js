@@ -31,4 +31,4 @@ const Template = ({title,desc1,desc2,image,formtype,setIsLoggedIn
   )
 }
 
-export default Template
+export default Template;

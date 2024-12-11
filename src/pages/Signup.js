@@ -1,5 +1,5 @@
 import React from 'react';
-import {Template} from "../components/Template";
+import Template from '../components/Template';
 import SignupImg from "../assets/signup.png";
 
 
@@ -11,7 +11,7 @@ const Signup = ({setIsLoggedIn}) => {
         desc1="build skill for today, tommarrow and beyond "
         desc2="education to future proof your code"
         image={SignupImg}
-        formType="login"
+        formtype="login"
         setIsLoggedIn={setIsLoggedIn}
     />
       

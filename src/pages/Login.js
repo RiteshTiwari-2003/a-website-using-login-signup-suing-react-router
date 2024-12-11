@@ -10,7 +10,7 @@ const Login = ({setIsLoggedIn}) => {
     desc1="build skill for today, tommarrow and beyond "
     desc2="education to future proof your code"
     image={loginImg}
-    formType="login"
+    formtype="login"
     setIsLoggedIn={setIsLoggedIn}
     />
   )
