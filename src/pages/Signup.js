@@ -11,7 +11,7 @@ const Signup = ({setIsLoggedIn}) => {
         desc1="build skill for today, tommarrow and beyond "
         desc2="education to future proof your code"
         image={SignupImg}
-        formtype="login"
+        formtype="signup"
         setIsLoggedIn={setIsLoggedIn}
     />
       
