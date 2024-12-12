@@ -39,7 +39,7 @@ const LoginForm = ({setIsLoggedIn}) => {
             name="email"
             classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
         </label>
-        <label className="w-full ">
+        <label className="w-full relative">
             <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">Password:<sup>*</sup></p>
             <input
             required
@@ -49,12 +49,12 @@ const LoginForm = ({setIsLoggedIn}) => {
             placeholder="enter password"
             name="password"
             classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
-            <span onClick={()=>{setShowPassword((prev)=>!prev)}}>
-                {showPassword?(<AiOutlineEyeInvisible/>):(<AiOutlineEye/>)}
+            <span onClick={()=>{setShowPassword((prev)=>!prev)}} className="absolute right-3 top-[38px] cursor-pointer ">
+                {showPassword?(<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF'/>):(<AiOutlineEye fontSize={24} fill='#AFB2BF'/>)}
             </span>
-            <Link to="#"><p>forget password</p></Link>
+            <Link to="#"><p className="text-xs mt-1 text-blue-100 max-w-max ml-auto">forget password</p></Link>
         </label>
-        <button>
+        <button className="bg-yellow-50 rounded-[8px] font-medium text-richblack-900 px-[12px] py-[8px] mt-6">
             Sign in
         </button>
     </form>
