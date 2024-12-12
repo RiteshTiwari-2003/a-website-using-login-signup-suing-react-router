@@ -23,6 +23,7 @@ const LoginForm = ({setIsLoggedIn}) => {
         event.preventDefault();
         setIsLoggedIn(true);
         toast.success("logged in");
+        navigate('/dashboard');
 
     }
   return (
