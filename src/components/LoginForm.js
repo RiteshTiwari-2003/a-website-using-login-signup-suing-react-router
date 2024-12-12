@@ -2,8 +2,11 @@ import React from 'react';
 import {AiOutlineEye,AiOutlineEyeInvisible} from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import {useState} from "react";
+import { toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const LoginForm = () => {
+
+const LoginForm = ({setIsLoggedIn}) => {
     const [formData,setFormData]=useState({
         email:"",
         password:""
@@ -15,8 +18,14 @@ const LoginForm = () => {
         }))
 
     }
+    function submitHandler(event){
+        event.preventDefault();
+        setIsLoggedIn(true);
+        toast.success("logged in");
+
+    }
   return (
-    <form>
+    <form onSubmit={submitHandler}>
         <label>
             <p>Email address:<sup>*</sup></p>
             <input
