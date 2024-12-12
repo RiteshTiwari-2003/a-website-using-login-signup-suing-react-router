@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState} from "react";
 import {AiOutlineEye,AiOutlineEyeInvisible} from "react-icons/ai";
+import {toast} from 'react-hot-toast';
 
 const SignupForm = () => {
     const [formData,setFormData]=useState({
@@ -17,6 +18,13 @@ const SignupForm = () => {
         }))
 
     }
+    function submitHandler(event){
+        event.preventDefault();
+        if (formData.password!== formData.confirmPassword){
+            toast.error("password do not match");
+        }
+
+    }
   return (
     <div>
         <div>
@@ -27,7 +35,7 @@ const SignupForm = () => {
                 Instructor
             </button>
         </div>
-        <form>
+        <form onSubmit={submitHandler}>
             <div>
             <label>
                 <p>first name:<sup>*</sup></p>
