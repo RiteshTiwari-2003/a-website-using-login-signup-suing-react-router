@@ -14,6 +14,7 @@ const SignupForm = ({setIsLoggedIn}) => {
         confirmPassword:""
     })
     const [showPassword,setShowPassword]=useState(false);
+    const [accountType,setAccountType]=useState("student");
     function changeHandler(event){
         setFormData((prevData)=>({...prevData,
             [event.target.name]:event.target.value
@@ -37,16 +38,16 @@ const SignupForm = ({setIsLoggedIn}) => {
     }
   return (
     <div>
-        <div>
-            <button>
+        <div childrenlassname="flex bg-richblack-800 p-1 gap-x-1 my-6 rounded-full max-w-max">
+            <button onClick={()=>{setAccountType("student")}}>
                 Student
             </button>
-            <button>
+            <button onClick={()=>{setAccountType("instructor")}}>
                 Instructor
             </button>
         </div>
         <form onSubmit={submitHandler}>
-            <div classname="flex justify-between mt-[10px]">
+            <div classname="flex justify-between mt-[20px]">
             <label className="w-full">
                 <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">first name:<sup className="text-pink-200">*</sup></p>
                 <input
@@ -72,7 +73,8 @@ const SignupForm = ({setIsLoggedIn}) => {
 
             </label>
             </div>
-            <label classname="w-full mt-[10px]">
+            <div classname="mt-[20px]">
+            <label classname="w-full mt-[20px]">
                 <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">email address:<sup className="text-pink-200">*</sup></p>
                 <input
                 required
@@ -84,7 +86,9 @@ const SignupForm = ({setIsLoggedIn}) => {
                 classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
 
             </label>
-            <div className="w-full flex gap-x-4 mt-[10px]">
+            </div>
+            
+            <div className="w-full flex gap-x-4 mt-[20px]">
             <label className="w-full relative">
                 <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">create password<sup className="text-pink-200">*</sup></p>
                 <input
