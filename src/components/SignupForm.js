@@ -96,7 +96,7 @@ const SignupForm = ({setIsLoggedIn}) => {
                 value={formData.password}
                 classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
                 <span onClick={()=>{setShowPassword((prev)=>!prev)}} className="absolute right-3 top-[38px] cursor-pointer ">
-                    {showPassword?(<AiOutlineEyeInvisible/>):(<AiOutlineEye/>)}
+                    {showPassword?(<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF'/>):(<AiOutlineEye fontSize={24} fill='#AFB2BF'/>)}
                 </span>
 
             </label>
@@ -111,7 +111,7 @@ const SignupForm = ({setIsLoggedIn}) => {
                 value={formData.confirmPassword}
                 classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
                 <span onClick={()=>{setShowPassword((prev)=>!prev)}} className="absolute right-3 top-[38px] cursor-pointer ">
-                    {showPassword?(<AiOutlineEyeInvisible/>):(<AiOutlineEye/>)}
+                    {showPassword?(<AiOutlineEyeInvisible fontSize={24} fill='#AFB2BF'/>):(<AiOutlineEye fontSize={24} fill='#AFB2BF'/>)}
                 </span>
 
             </label>
