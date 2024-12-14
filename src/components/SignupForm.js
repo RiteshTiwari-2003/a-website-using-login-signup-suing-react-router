@@ -48,63 +48,68 @@ const SignupForm = ({setIsLoggedIn}) => {
         <form onSubmit={submitHandler}>
             <div>
             <label>
-                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">first name:<sup>*</sup></p>
+                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">first name:<sup className="text-pink-200">*</sup></p>
                 <input
                 required
                 type="text"
                 name="firstname"
                 onChange={changeHandler}
                 placeholder="Enter the first name"
-                value={formData.firstname}/>
+                value={formData.firstname}
+                classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
 
             </label>
             <label>
-                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">last name:<sup>*</sup></p>
+                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">last name:<sup className="text-pink-200">*</sup></p>
                 <input
                 required
                 type="text"
                 name="lastname"
                 onChange={changeHandler}
                 placeholder="Enter the last name"
-                value={formData.lastname}/>
+                value={formData.lastname}
+                classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
 
             </label>
             </div>
             <label>
-                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">email address:<sup>*</sup></p>
+                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">email address:<sup className="text-pink-200">*</sup></p>
                 <input
                 required
                 type="email"
                 name="email"
                 onChange={changeHandler}
                 placeholder="Enter the email address"
-                value={formData.email}/>
+                value={formData.email}
+                classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
 
             </label>
             <div>
             <label className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">
-                <p>create password<sup>*</sup></p>
+                <p>create password<sup className="text-pink-200">*</sup></p>
                 <input
                 required
                 type={showPassword?("text"):("password")}
                 name="password"
                 onChange={changeHandler}
                 placeholder="Enter the password"
-                value={formData.password}/>
+                value={formData.password}
+                classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
                 <span onClick={()=>{setShowPassword((prev)=>!prev)}}>
                     {showPassword?(<AiOutlineEyeInvisible/>):(<AiOutlineEye/>)}
                 </span>
 
             </label>
             <label className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">
-                <p>confirm password<sup>*</sup></p>
+                <p>confirm password<sup className="text-pink-200">*</sup></p>
                 <input
                 required
                 type={showPassword?("text"):("password")}
                 name="confirmPassword"
                 onChange={changeHandler}
                 placeholder="confirm password"
-                value={formData.confirmPassword}/>
+                value={formData.confirmPassword}
+                classname="bg-richblack-800 rounded-[0.5rem] text-richblack-5 w-full p-[12px]"/>
                 <span onClick={()=>{setShowPassword((prev)=>!prev)}}>
                     {showPassword?(<AiOutlineEyeInvisible/>):(<AiOutlineEye/>)}
                 </span>
