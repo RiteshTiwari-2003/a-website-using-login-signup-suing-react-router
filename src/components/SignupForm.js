@@ -48,7 +48,7 @@ const SignupForm = ({setIsLoggedIn}) => {
         <form onSubmit={submitHandler}>
             <div>
             <label>
-                <p>first name:<sup>*</sup></p>
+                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">first name:<sup>*</sup></p>
                 <input
                 required
                 type="text"
@@ -59,7 +59,7 @@ const SignupForm = ({setIsLoggedIn}) => {
 
             </label>
             <label>
-                <p>last name:<sup>*</sup></p>
+                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">last name:<sup>*</sup></p>
                 <input
                 required
                 type="text"
@@ -71,7 +71,7 @@ const SignupForm = ({setIsLoggedIn}) => {
             </label>
             </div>
             <label>
-                <p>email address:<sup>*</sup></p>
+                <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">email address:<sup>*</sup></p>
                 <input
                 required
                 type="email"
@@ -82,7 +82,7 @@ const SignupForm = ({setIsLoggedIn}) => {
 
             </label>
             <div>
-            <label>
+            <label className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">
                 <p>create password<sup>*</sup></p>
                 <input
                 required
@@ -96,7 +96,7 @@ const SignupForm = ({setIsLoggedIn}) => {
                 </span>
 
             </label>
-            <label>
+            <label className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">
                 <p>confirm password<sup>*</sup></p>
                 <input
                 required
