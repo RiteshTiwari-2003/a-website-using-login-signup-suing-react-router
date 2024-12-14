@@ -46,7 +46,7 @@ const SignupForm = ({setIsLoggedIn}) => {
             </button>
         </div>
         <form onSubmit={submitHandler}>
-            <div>
+            <div classname="flex gap-x-10">
             <label>
                 <p className="text-[0.875rem] text-richblack-5 mb-1 leading-[1.375rem] ">first name:<sup className="text-pink-200">*</sup></p>
                 <input
@@ -116,7 +116,7 @@ const SignupForm = ({setIsLoggedIn}) => {
 
             </label>
             </div>
-            <button className="bg-yellow-50 rounded-[8px] font-medium text-richblack-900 px-[12px] py-[8px] mt-6">
+            <button className="w-full bg-yellow-50 rounded-[8px] font-medium text-richblack-900 px-[12px] py-[8px] mt-6">
                 create account
             </button>
             
