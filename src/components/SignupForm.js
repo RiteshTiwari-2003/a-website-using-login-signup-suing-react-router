@@ -29,6 +29,7 @@ const SignupForm = ({setIsLoggedIn}) => {
         }
         setIsLoggedIn(true);
         toast.success("account created");
+        // eslint-disable-next-line no-unused-vars
         const accountData={
             ...formData
         };
